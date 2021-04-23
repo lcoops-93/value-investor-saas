@@ -22,7 +22,8 @@ const Home = () => {
         first="true"
         title={IntroContent.title}
         content={IntroContent.text}
-        button={IntroContent.button}
+        //button={IntroContent.button}
+        search={true}
         icon="developer.svg"
         id="intro"
       />

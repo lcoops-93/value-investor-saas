@@ -4,10 +4,11 @@ import Slide from "react-reveal/Slide";
 
 import SvgIcon from "../../../common/SvgIcon";
 import Button from "../../../common/Button";
+import AutocompleteSearch from "../../../components/AutocompleteSearch";
 
 import * as S from "./styles";
 
-const RightBlock = ({ title, content, button, icon, t, id }) => {
+const RightBlock = ({ title, content, button, search, icon, t, id }) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({
@@ -38,6 +39,9 @@ const RightBlock = ({ title, content, button, icon, t, id }) => {
                     );
                   })}
               </S.ButtonWrapper>
+              {search &&
+                  <AutocompleteSearch/>
+                  }
             </S.ContentWrapper>
           </Slide>
         </Col>
