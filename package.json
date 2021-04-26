@@ -14,6 +14,8 @@
     "@types/semantic-ui": "^2.2.7",
     "antd": "^4.15.1",
     "axios": "^0.21.1",
+    "chart.js": "^3.2.0",
+    "chartjs-plugin-dragdata": "^2.0.2",
     "graphql": "^15.5.0",
     "i18next": "^19.9.2",
     "i18next-browser-languagedetector": "^6.1.0",
@@ -54,10 +56,14 @@
   "devDependencies": {
     "@craco/craco": "^6.1.1",
     "@semantic-ui-react/craco-less": "^1.2.1",
+    "@types/chart.js": "^2.9.32",
     "@types/faker": "^5.5.3",
     "@types/lodash": "^4.14.168",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.9",
     "faker": "^5.5.3",
     "lodash": "^4.17.21",
+    "react-chartjs-2": "^3.0.2",
     "semantic-ui-less": "^2.4.1"
   }
 }

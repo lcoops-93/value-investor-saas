@@ -1,8 +1,8 @@
 import _ from 'lodash'
-// import faker from 'faker'
 import React from 'react'
 import { Search } from 'semantic-ui-react'
 import { gql, useQuery } from '@apollo/client'
+import {useHistory} from 'react-router-dom'
 
 const ALL_SNAPSHOTS = gql`
 query {
@@ -12,12 +12,6 @@ query {
   }
 }
 `
-
-// const source = _.times(5, () => ({
-//   title: faker.company.companyName(),
-//   description: faker.company.catchPhrase(),
-// }))
-
 
 const initialState = {
   loading: false,
@@ -80,6 +74,7 @@ function exampleReducer(state: ReducerState, action: ReducerAction) {
     case ActionType.FINISH_SEARCH:
       return { ...state, loading: false, results: action.results }
     case ActionType.UPDATE_SELECTION:
+      console.log(`Selecton ${action.selection}`)
       return { ...state, value: action.selection }
 
     default:
@@ -90,6 +85,7 @@ function exampleReducer(state: ReducerState, action: ReducerAction) {
 function AutocompleteSearch() {
   const [state, dispatch] = React.useReducer(exampleReducer, initialState)
   const allSnapshotsResult = useQuery(ALL_SNAPSHOTS)
+  const history = useHistory()
   let snapshotErrorLogged = false
   const { loading, results, value } = state
   
@@ -144,7 +140,11 @@ function AutocompleteSearch() {
     <Search
       loading={loading}
       onResultSelect={(_e, data) =>
-        dispatch({ type: ActionType.UPDATE_SELECTION, selection: data.result.title })
+        {
+          history.push(`/company/${data.result.title}`)
+          return dispatch({ type: ActionType.UPDATE_SELECTION, selection: data.result.title })
+        }
+        
       }
       onSearchChange={handleSearchChange}
       results={results}
