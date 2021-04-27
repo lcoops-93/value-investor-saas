@@ -63,6 +63,7 @@
     "@types/styled-components": "^5.1.9",
     "faker": "^5.5.3",
     "lodash": "^4.17.21",
+    "prettier": "^2.2.1",
     "react-chartjs-2": "^3.0.2",
     "semantic-ui-less": "^2.4.1"
   }
