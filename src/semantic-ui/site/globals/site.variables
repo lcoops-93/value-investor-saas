@@ -16,7 +16,7 @@
 @grey           : #A0A0A0;
 @black          : #000000;
 
-@primaryColor: @green;
+@primaryColor: #2E186A;
 @secondaryColor: @black;
 
 

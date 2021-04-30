@@ -40,8 +40,8 @@ const Contact = ({ title, content, id, t }) => {
                 <Input
                   type="text"
                   name="name"
-                  id="Name"
-                  placeholder="Your Name"
+                  id="Name "
+                  placeholder="Your Name "
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -51,8 +51,8 @@ const Contact = ({ title, content, id, t }) => {
                 <Input
                   type="text"
                   name="email"
-                  id="Email"
-                  placeholder="Your Email"
+                  id="Email "
+                  placeholder="Your Email "
                   value={values.email || ""}
                   onChange={handleChange}
                 />

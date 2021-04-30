@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   padding: 5rem 0;
+
+  @media only screen and (min-width: 980px) {
+    margin-top: 20rem;
+  }
 `;
 
 export const Contact = styled.section`
