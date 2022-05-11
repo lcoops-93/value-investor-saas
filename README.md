@@ -1,5 +1,4 @@
-![Intrinsic Value Calculator - 11 May 2022](https://user-images.githubusercontent.com/56531743/167886990-fbee3cfc-7152-44b0-929e-10b0ffc21798.gif)
-<img src="https://user-images.githubusercontent.com/56531743/167886990-fbee3cfc-7152-44b0-929e-10b0ffc21798.gif" width="50%">
+<img src="https://user-images.githubusercontent.com/56531743/167886990-fbee3cfc-7152-44b0-929e-10b0ffc21798.gif" width="65%">
 
 # Intrisic Value Calculator Web-App
 Intrinsic Value Calculator is a free Webapp, designed for retail investors, who want to do quick and professional discounted cash flow analysis on public US companies.
