@@ -1,5 +1,5 @@
 export{}
-require("dotenv").config()
-const SERVER_URI = process.env.SERVER_URI
+// require("dotenv").config()
+const SERVER_URI = "/graphql"//process.env.SERVER_URI
 
 export default SERVER_URI

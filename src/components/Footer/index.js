@@ -48,9 +48,9 @@ const Footer = ({ t }) => {
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
                 <S.Language>{t("ADDRESS")}</S.Language>
-                <S.Para>Rancho Santa Margarita</S.Para>
-                <S.Para>2131 Elk Street</S.Para>
-                <S.Para>California</S.Para>
+                <S.Para>4a Kings Road</S.Para>
+                <S.Para>Leytonstone, London</S.Para>
+                <S.Para>United Kingdom</S.Para>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
               <S.Select>
